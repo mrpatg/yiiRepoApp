@@ -1,0 +1,45 @@
+2013/03/07 12:46:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /var/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#1 /var/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/repoapp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/repoapp/index.php?r=gii
+---
+2013/03/07 12:49:06 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'repoapp.repoapp_tbl' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `repoapp_tbl`.
+in /var/www/repoapp/index.php (13)
+2013/03/07 12:49:12 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'repoapp.repoappp' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `repoappp`.
+in /var/www/repoapp/index.php (13)
+2013/03/07 14:05:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api".' in /var/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('api')
+#1 /var/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/repoapp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/repoapp/index.php/api/
+---
+2013/03/08 05:58:45 [error] [php] date() [<a href='function.date'>function.date</a>]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'America/Chicago' for 'CST/-6.0/no DST' instead (/home/orbitrne/public_html/yii/repoapp/protected/views/layouts/main.php:51)
+Stack trace:
+#0 /home/orbitrne/public_html/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /home/orbitrne/public_html/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#2 /home/orbitrne/public_html/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#3 /home/orbitrne/public_html/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 /home/orbitrne/public_html/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#5 /home/orbitrne/public_html/yii/framework/web/CBaseController.php(300): SiteController->endWidget()
+#6 /home/orbitrne/public_html/yii/repoapp/protected/views/layouts/column1.php(6): SiteController->endContent()
+#7 /home/orbitrne/public_html/yii/framework/web/CBaseController.php(126): require()
+#8 /home/orbitrne/public_html/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#9 /home/orbitrne/public_html/yii/framework/web/CController.php(784): SiteController->renderFile()
+#10 /home/orbitrne/public_html/yii/repoapp/protected/controllers/SiteController.php(32): SiteController->render()
+#11 /home/orbitrne/public_html/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /home/orbitrne/public_html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /home/orbitrne/public_html/yii/framework/web/CController.php(286): SiteController->runAction()
+#14 /home/orbitrne/public_html/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#15 /home/orbitrne/public_html/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#16 /home/orbitrne/public_html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /home/orbitrne/public_html/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /home/orbitrne/public_html/yii/repoapp/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/repoapp/
+in /home/orbitrne/public_html/yii/repoapp/protected/views/layouts/main.php (51)
+in /home/orbitrne/public_html/yii/repoapp/protected/views/layouts/column1.php (6)
+in /home/orbitrne/public_html/yii/repoapp/protected/controllers/SiteController.php (32)
